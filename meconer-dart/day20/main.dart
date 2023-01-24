@@ -49,8 +49,6 @@ int calcResultP2(String inputLines) {
   final endImage = buildEndImage(image);
   drawEndImage(endImage);
 
-  int monsterCount = countSeaMonsters(endImage);
-
   // I was lucky and didnt need to rotate or flip the end image to find the monsters
   // Otherwise it would have been done here. If monsterCount was 0
   drawEndImage(endImage);

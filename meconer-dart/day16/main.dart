@@ -17,7 +17,6 @@ Future<void> main(List<String> args) async {
 
 int calcResultP1(List<String> inputLines) {
   List<Range> ranges = [];
-  List<int> myTicketValues = [];
   List<List<int>> nearbyTickets = [];
   int section = 0;
 
@@ -44,7 +43,6 @@ int calcResultP1(List<String> inputLines) {
     if (section == 1) {
       // My ticket
       if (line.startsWith('your')) continue;
-      myTicketValues = line.split(',').map((e) => int.parse(e)).toList();
     }
 
     if (section == 2) {
